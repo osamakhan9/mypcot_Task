@@ -1,0 +1,86 @@
+
+.reg {
+	height: auto;
+	width: 700px;
+	background-color: black;
+	margin: auto;
+	border-radius: 10px;
+	backdrop-filter: blur(10px);
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	/* border: 2px solid rgba(255, 255, 255, 0.1); */
+	box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+	padding: 0px 35px;
+	background-image: url('https://images.unsplash.com/photo-1647888162325-346cc541bcc9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 90%;
+}
+
+form * {
+	font-family: "Poppins", sans-serif;
+	color: white;
+	letter-spacing: 0.5px;
+	outline: none;
+	border: none;
+}
+
+.reg h3 {
+	padding-top: 10px;
+	font-size: 32px;
+	font-weight: 500;
+	line-height: 42px;
+	text-align: center;
+}
+
+.reg>label {
+	display: block;
+	margin-top: 10px;
+	font-size: 16px;
+	font-weight: 800;
+	text-align: left;
+}
+
+.reg>input {
+	display: block;
+	height: 50px;
+	width: 100%;
+	background: transparent;
+	border-radius: 3px;
+	margin-top: 3px;
+	color: white;
+	font-size: 14px;
+	font-weight: 400;
+	border-bottom: 1px solid white;
+}
+
+::placeholder {
+	color: white;
+}
+
+button {
+	margin-top: 50px;
+	width: 100%;
+	background-color: white;
+	color: black;
+	padding: 15px 0;
+	font-size: 18px;
+	font-weight: 600;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-bottom: 30px;
+}
+
+.gen {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+}
+.link{
+	text-align: right;
+	padding-bottom: 20px;
+	color: rgb(0, 255, 64);
+}
