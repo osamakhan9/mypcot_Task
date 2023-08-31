@@ -64,7 +64,7 @@ const RegistrationForm = () => {
   }
 
   return (
-    <Box marginTop="20%">
+    <Box marginTop="4%">
     <div>
 
       <form className='reg' onSubmit={handleSubmit}>
@@ -109,7 +109,7 @@ const RegistrationForm = () => {
         onChange={(e)=>setobj({...obj,[e.target.name]:e.target.value})} 
         placeholder="Password" id="password" />
 
-        <button>Log In</button>
+        <button id='btn'>Registration</button>
          <div className='link'>Have already an account? <Link to='/login'>Login Here</Link> </div>
       </form>
     </div>

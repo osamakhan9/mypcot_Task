@@ -16,6 +16,7 @@
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 60%;
+	margin-top: 20%;
   }
   form * {
 	font-family: "Poppins", sans-serif;
@@ -53,7 +54,7 @@
   ::placeholder {
 	color: white;
   }
-  button {
+  #btn {
 	margin-top: 50px;
 	width: 100%;
 	background-color: white;
