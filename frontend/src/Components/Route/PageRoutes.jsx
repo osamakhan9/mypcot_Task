@@ -5,6 +5,7 @@ import LoginForm from '../Login/LoginForm'
 import Crud from '../CRUD/Crud'
 import Home from '../Home/Home'
 import NewTask from '../NewTask/NewTask'
+import { SinglePageCrud } from '../SinglePage/SinglePageCrud'
 
 
 const PageRoutes = () => {
@@ -16,6 +17,7 @@ const PageRoutes = () => {
 			<Route path='/login' element={<LoginForm/>}/>
 		    <Route path='/crud' element={<Crud/>}/>
 			<Route path='/NewTask' element={<NewTask/>}/>
+			<Route path='/SingleData/:id' element={<SinglePageCrud/>}/>
 		</Routes>
 	</div>
   )

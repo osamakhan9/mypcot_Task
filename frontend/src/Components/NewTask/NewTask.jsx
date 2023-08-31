@@ -16,9 +16,10 @@ const NewTask = () => {
 	const [name, setName] = useState('');
 	const [description, setDescription] = useState('');
 	const [category, setCategory] = useState('');
-	const [active, setActive] = useState(true);
+	const [active, setActive] = useState('')
 
-	
+
+
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		
@@ -40,7 +41,7 @@ const NewTask = () => {
 				isClosable: true,
 				position: 'top'
 			})
-			Navigator('/home')
+			Navigator('/crud')
 		
 	};
 
@@ -78,10 +79,10 @@ const NewTask = () => {
 
 					<div className={style.activeDive}>
 						<label className={style.activeLable}>Active</label>
-						<input type="radio" value={true} onChange={(e) => setActive(e.target.checked)} />
+						<input type="radio"  value={true} onChange={(e) => setActive(e.target.value)} />
 
 						<label className={style.activeLable}>In Active</label>
-						<input type="radio" value={false} onChange={(e) => setActive(e.target.checked)} />
+						<input type="radio"  value={false} onChange={(e) => setActive(e.target.value)} />
 					</div>
 
 					<Button type='submit' mt='10px' width='100%'>Submit</Button>
