@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import '../style/style.css'
 import { Link } from 'react-router-dom'
 import { useNavigate } from "react-router-dom";
-import { Box , useToast} from '@chakra-ui/react';
+import { Box , Button, useToast} from '@chakra-ui/react';
 import axios from 'axios'
 
 const LoginForm = () => {
@@ -29,7 +29,7 @@ const LoginForm = () => {
           isClosable: true,
           position:'top'
         })
-        Navigator('/')
+        Navigator('/home')
       }else{
         toast({
           title: 'Error Occured',
@@ -56,7 +56,7 @@ const LoginForm = () => {
 
 
   return (
-    <Box mt='20%'>
+    <Box>
     <div>
       <form className='login' onSubmit={handleLogin}>
 
@@ -74,7 +74,7 @@ const LoginForm = () => {
         onChange={(e)=>setobj({...obj,[e.target.name]:e.target.value})}
         placeholder="Password" id="password" />
 
-        <button>Log In</button>
+        <button id='btn'>Log In</button>
         <div className='link'>Don't have an account? <Link to='/'>Registration Here</Link> </div>
 
       </form>
