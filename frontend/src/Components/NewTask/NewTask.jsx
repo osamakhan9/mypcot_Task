@@ -23,7 +23,7 @@ const NewTask = () => {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		
-		const response = await fetch('http://localhost:8080/create', {
+		const response = await fetch('https://backend-jwq9.onrender.com/create', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',

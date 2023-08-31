@@ -17,7 +17,7 @@ const LoginForm = () => {
   const handleLogin = async(e)=>{
     e.preventDefault();
     try{
-      let res = await axios.post('http://localhost:8080/user/login',obj)
+      let res = await axios.post('https://backend-jwq9.onrender.com/user/login',obj)
      let data = await res.data
       console.log(data)
       if(data.token){
@@ -29,7 +29,7 @@ const LoginForm = () => {
           isClosable: true,
           position:'top'
         })
-        Navigator('/home')
+        Navigator('/crud')
       }else{
         toast({
           title: 'Error Occured',
