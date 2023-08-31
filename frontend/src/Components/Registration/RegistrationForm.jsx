@@ -22,7 +22,7 @@ const RegistrationForm = () => {
 
     e.preventDefault();
     try{
-      let res = await axios.post('http://localhost:8080/user/signup',obj)
+      let res = await axios.post('https://backend-jwq9.onrender.com/user/signup',obj)
      let data = await res.data
       console.log(data)
       if(data.token){
@@ -88,7 +88,8 @@ const RegistrationForm = () => {
           name='gender' value='male' 
           checked={obj.gender == 'male'}
           onChange={(e)=>setobj({...obj,[e.target.name]:e.target.value})} 
-          /> <label htmlFor="">Male</label>
+          />
+           <label htmlFor="">Male</label>
           <input type="radio"
           name='gender' value='female'
           checked={obj.gender == 'female'}

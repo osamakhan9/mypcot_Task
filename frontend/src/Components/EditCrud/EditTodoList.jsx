@@ -30,7 +30,7 @@ export function EditTodoList({ el, apiCall, toast }) {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 
-		const response = await fetch(`http://localhost:8080/update-record/${el._id}`, {
+		const response = await fetch(`https://backend-jwq9.onrender.com/update-record/${el._id}`, {
 			method: 'PUT',
 			headers: {
 				'Content-Type': 'application/json',

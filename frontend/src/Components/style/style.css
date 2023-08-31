@@ -1,17 +1,17 @@
 .login {
 	height: auto;
 	width: 450px;
-	background-color: black;
+	background-color: #ebebeb;
 	position: absolute;
 	transform: translate(-50%, -50%);
 	top: 50%;
 	left: 50%;
 	border-radius: 10px;
 	backdrop-filter: blur(10px);
-	border: 2px solid rgba(255, 255, 255, 0.1);
+	border: 2px solid rgba(36, 34, 34, 0.1);
 	box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
 	padding: 50px 35px;
-	background-image: url('https://images.unsplash.com/photo-1647888162325-346cc541bcc9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80');
+	background-image: url('https://images.unsplash.com/photo-1487700160041-babef9c3cb55?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2052&q=80');
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -20,7 +20,7 @@
   }
   form * {
 	font-family: "Poppins", sans-serif;
-	color: white;
+	color: black;
 	letter-spacing: 0.5px;
 	outline: none;
 	border: none;
@@ -38,6 +38,7 @@
 	font-size: 16px;
 	font-weight: 500;
 	text-align: left;
+	background:transparent;
   }
   .login>input {
 	display: block;
@@ -46,19 +47,21 @@
 	background: transparent;
 	border-radius: 3px;
 	margin-top: 8px;
-	color: white;
+	color: black;
 	font-size: 14px;
 	font-weight: 300;
-	border-bottom: 1px solid white;
+	border-bottom: 1px solid rgb(19, 18, 18);
   }
   ::placeholder {
-	color: white;
+	color: black;
+	background-color: #ebebeb;
+	background: transparent;
   }
   #btn {
 	margin-top: 50px;
 	width: 100%;
-	background-color: white;
-	color:black;
+	background-color: #273410;
+	color:white;
 	padding: 15px 0;
 	font-size: 18px;
 	font-weight: 600;
@@ -72,7 +75,7 @@
 	.login {
 		height: auto;
 		width: 300px;
-		background-color: black;
+		background-color:#ebebeb;
 		position: absolute;
 		transform: translate(-50%, -50%);
 		top: 50%;
@@ -82,7 +85,7 @@
 		border: 2px solid rgba(255, 255, 255, 0.1);
 		box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
 		padding: 50px 35px;
-		background-image: url('https://images.unsplash.com/photo-1647888162325-346cc541bcc9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80');
+		background-image: url('https://images.unsplash.com/photo-1487700160041-babef9c3cb55?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2052&q=80');
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-attachment: fixed;

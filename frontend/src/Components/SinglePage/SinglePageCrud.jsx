@@ -12,7 +12,7 @@ export const SinglePageCrud = () => {
 	useEffect(()=>{
         // setLoad(true)
         async function getObj(){
-            let res = await axios.get(`http://localhost:8080/SingleData/${params.id}`);
+            let res = await axios.get(`https://backend-jwq9.onrender.com/SingleData/${params.id}`);
             let ans = await res.data;
        
 			setRecord(ans[0])
@@ -23,25 +23,12 @@ export const SinglePageCrud = () => {
 
 	console.log(record)
 
-	// async function DataFetch() {
-	// 	let res = await fetch(`http://localhost:8080/SingleData/${params.id}`);
-	// 	res = await res.json();
-
-	// 	setRecord(res)
-
-	// }
-	// DataFetch()
-
-
-
-	// console.log(record.records[0])
-
 	return (
 		<>
 			<Navbar />
 
 
-		 <Box  boxShadow='xs' p='6' rounded='md' bg='white' textAlign='left' width='auto'  >
+		 <Box  boxShadow='xs' p='6' rounded='md' bg='white' textAlign='left' width='42%' m='auto' mt='30px'  >
            
 		   <Text>Name: {record.name}</Text>
 		   <br />

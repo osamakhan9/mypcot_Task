@@ -12,7 +12,7 @@ const Crud = () => {
 
 
 	async function apiCall() {
-		let res = await fetch("http://localhost:8080/records");
+		let res = await fetch("https://backend-jwq9.onrender.com/records");
 		res = await res.json();
 		
 		setData(res)
@@ -24,7 +24,7 @@ const Crud = () => {
 
 
 	async function handleDelete(id) {
-		await fetch(`http://localhost:8080/deleterecord/${id}`, {
+		await fetch(`https://backend-jwq9.onrender.com/deleterecord/${id}`, {
 			method: "DELETE",
 
 		});
