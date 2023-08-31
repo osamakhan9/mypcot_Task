@@ -13,10 +13,12 @@ app.use(cors())
 
 const User = require('./user/user.router')
 
+const Crud = require('./crud/crud.router')
+
 
 
 app.use('/user', User)
-
+app.use('/',Crud)
 
 app.get('/', (req,res)=>{
 	return res.send("Hello World WELCOME to my Server")
